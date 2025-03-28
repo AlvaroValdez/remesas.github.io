@@ -37,7 +37,7 @@
             const documento = await toBase64(document.getElementById("documentoKYC").files[0]);
             
             // Enviar datos a n8n
-            const response = await fetch("URL_WEBHOOK_N8N", {
+            const response = await fetch("https://alvarovaldez.github.io/remesas.github.io", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
